@@ -11,7 +11,8 @@ awk 'BEGIN{m=0;t=0}{if($3>=1551 && $3<1650 && $8>5){m+=$7;t+=$8}}END{print m/t}'
 awk 'BEGIN{m=0;all=0}{m+=$7;all+=$8}END{printf "%.2f\n",m/all}' test.txt
 - 求某列均值
 awk 'BEGIN{m=0}{m+=$6}END{printf "%.4f\n",m/NR}' test.txt
-
+- 条件判断求均值
+awk '{if($1==0 && $2 ==0){lev=0}else{lev=$1/($1+$2)}}{print lev}' test.txt
 - 某行第二列到最后一列的和大于某值输出本行
 awk '{for(i=2;i<=NF;i++) t+=$i; {if(t>20){print $0}}; t=0}' FS="," new_chr11_DEG_FPKM.csv
 
@@ -327,3 +328,11 @@ echo "Init..."
 
 ### awk匹配设置大小写不敏感
 `awk 'BEGIN{IGNORECASE=1} /amit/' marks.txt`
+
+![mark](http://ol8t44w0x.bkt.clouddn.com/blog/181025/DgIfbDmb4g.png?imageslim)
+
+59Zm4U4u7xeW
+
+144.34.173.118
+
+29507

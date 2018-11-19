@@ -328,11 +328,3 @@ echo "Init..."
 
 ### awk匹配设置大小写不敏感
 `awk 'BEGIN{IGNORECASE=1} /amit/' marks.txt`
-
-![mark](http://ol8t44w0x.bkt.clouddn.com/blog/181025/DgIfbDmb4g.png?imageslim)
-
-59Zm4U4u7xeW
-
-144.34.173.118
-
-29507
